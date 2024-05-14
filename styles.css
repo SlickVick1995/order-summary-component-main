@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+    /* height: 550px; */
+    width: 500px;
+    background-color: white;
+    /* gap: 20px; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+#card-img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+.card-container h1 {
+    margin-bottom: 20px;
+}
+
+.card-container p {
+    font-size: 14px;
+    text-align: center;
+    text-wrap: balance;
+    color: var(--Desaturated-blue);
+    margin-bottom: 20px;
+    width: 65%;
+    margin-inline: auto;
+    line-height: 1.5;
+}
+
+.pricing {
+    display: flex;
+    /* border: 1px solid blue; */
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    width: calc(100% - 100px);
+    margin-inline: auto;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.pricing > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.pricing-container p {
+    margin: 0;
+    text-align: left;
+}
+
+.pricing button {
+    color: var(--Bright-blue);
+    border: none;
+    background-color: var(--Very-pale-blue);
+    text-decoration: underline;
+}
+
+.pricing button:hover {
+   cursor: pointer;
+   color: var(--Desaturated-blue);
+}
+
+#payment {
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: calc(100% - 100px);
+    margin-inline: auto;
+}
+
+#payment:hover {
+    cursor: pointer;
+    
+}
+
+#cancel {
+    color: var(--Dark-blue);
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: calc(100% - 100px);
+    padding: 20px;
+    margin-inline: auto;
+}
+
+#cancel:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+    .card-container {
+        width: 90%;
+    }
+
+    #card-img {
+        height: fit-content;
+    }
+
+    .pricing {
+        width: 90%;
+    }
+
+    #payment {
+        width: 90%;
+    }
+
+    #cancel {
+        width: 90%;
+    }
+}
